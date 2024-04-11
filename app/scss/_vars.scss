@@ -1,0 +1,31 @@
+$accent: #ffa55c;
+$bg: #ffe0cb;
+$bg-light: #fff9f4;
+$title: #1f1711;
+$input-bg: #ac907a;
+$disabled: #e1d9e1;
+$default: #312c27;
+
+%montserrat-400 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+%montserrat-500 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+%gabriola-400 {
+    font-family: 'Gabriola';
+    font-weight: 400;
+}
+
+%checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
