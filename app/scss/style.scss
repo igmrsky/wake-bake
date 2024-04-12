@@ -244,6 +244,7 @@
     &__info-date {
         position: relative;
         padding-left: 24px;
+
         &::before {
             content: '';
             position: absolute;
@@ -254,10 +255,12 @@
             left: -8px;
         }
     }
+
     &__address {
         font-style: normal;
         position: relative;
         padding-left: 24px;
+
         &::before {
             content: '';
             position: absolute;
@@ -291,19 +294,220 @@
         @extend %montserrat-500;
         text-transform: uppercase;
     }
+
     &__copy {
         color: #dec5b1;
         position: relative;
+
         &::before {
             content: '';
             position: absolute;
             background-image: url('../images/icons/copyright.svg');
             width: 24px;
             height: 24px;
-            top: -1px;
+            top: 0;
             left: 10px;
         }
     }
+}
+
+// ======================================================================
+
+.school {
+    padding: 140px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__img-box {
+        position: relative;
+    }
+
+    &__img {
+        border-radius: 20px;
+    }
+
+    &__icon-box {
+        position: absolute;
+        max-width: 300px;
+        left: 30px;
+        bottom: 25px;
+        display: flex;
+        padding: 15px 20px;
+        gap: 10px;
+        background-color: rgba(149, 123, 151, 0.9);
+        border-radius: 20px;
+    }
+
+    &__icon-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 78px;
+        height: 78px;
+        border-radius: 50%;
+        background-color: $bg-light;
+    }
+
+    &__icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    &__icon-text {
+        max-width: 171px;
+        color: $bg-light;
+    }
+
+    &__content {
+        max-width: 624px;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__subtitle {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    &__content-text {
+        max-width: 623px;
+        margin-bottom: 40px;
+    }
+
+    &__content-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        gap: 32px;
+    }
+
+    &__content-item {
+        max-width: 296px;
+        padding: 29px 23px;
+        background-color: $bg;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__icon-inner {
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
+        border: 1px solid $default;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__item-text {
+        max-width: 175px;
+    }
+
+    #pop-up {
+        display: none;
+    }
+}
+
+.fancybox-content {
+    border-radius: 20px;
+    padding: 130px 30px 60px 60px;
+    max-width: 430px;
+    width: 100%;
+    overflow: visible;
+    background-color: $bg-light;
+}
+
+.pop-up {
+    &__img {
+        position: absolute;
+        top: -65px;
+        left: 72px;
+    }
+
+    &__inner {
+        max-width: 308px;
+        width: 100%;
+    }
+
+    &__title {
+        @extend %gabriola-400;
+        font-size: 42px;
+        line-height: 0.9;
+        color: $title;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 20px 30px;
+        border: 1px solid $input-bg;
+        border-radius: 100px;
+        height: 62px;
+        outline: none;
+        margin-bottom: 10px;
+    }
+
+    &__btn {
+        width: 100%;
+        border: none;
+        padding: 18px 36px;
+        height: 62px;
+        @extend %btn;
+        cursor: pointer;
+    }
+}
+
+.fancybox-slide--video .fancybox-content {
+    max-width: none;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+    color: currentColor;
+    right: 20px;
+    top: 20px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border: 1px solid $disabled;
+        border-radius: 50%;
+        right: 10px;
+        transition: all .5s;
+    }
+}
+
+.fancybox-button svg path {
+    fill: $disabled;
+    transition: all .5s;
+}
+
+.fancybox-button:hover {
+    svg path {
+        fill: $input-bg;
+    }
+}
+
+.fancybox-close-small:hover::before {
+    border-color: $input-bg;
 }
 
 
