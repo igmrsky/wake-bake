@@ -22,3 +22,11 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+.title {
+    font-size: 74px;
+    @extend %gabriola-400;
+    color: $title;
+    line-height: 82%;
+    margin-bottom: 30px;
+}

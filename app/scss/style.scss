@@ -85,14 +85,6 @@
         }
     }
 
-    &__title {
-        font-size: 74px;
-        @extend %gabriola-400;
-        color: $title;
-        line-height: 82%;
-        margin-bottom: 30px;
-    }
-
     &__text {
         max-width: 360px;
         margin-bottom: 40px;
