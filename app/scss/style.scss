@@ -314,7 +314,7 @@
 // ======================================================================
 
 .school {
-    padding: 140px 0;
+    padding: 140px 0 70px;
 
     &__inner {
         display: flex;
@@ -483,6 +483,7 @@
     color: currentColor;
     right: 20px;
     top: 20px;
+
     &::before {
         content: '';
         position: absolute;
@@ -508,6 +509,58 @@
 
 .fancybox-close-small:hover::before {
     border-color: $input-bg;
+}
+
+.program {
+    padding: 70px 0;
+
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    &__top-text {
+        max-width: 374px;
+    }
+
+    &__top-tabs {
+        display: flex;
+        gap: 26px;
+    }
+
+    &__tab-link {
+        padding: 14px 30px;
+        background-color: $bg-light;
+        border-radius: 100px;
+        color: inherit;
+        box-shadow: 0 4px 20px 0 rgba(206, 195, 185, 0.3);
+        transition: all 1s;
+        &--active {
+            background-color: $bg;
+        }
+        &:hover {
+            box-shadow: none;
+            background-color: $bg;
+        }
+    }
+    &__tab-item {
+        display: none;
+        &.program__tab-item--active {
+            display: block;
+        }
+    }
+
+    &__tab-title {
+        border: 1px solid $accent;
+        border-radius: 20px;
+        padding: 40px 30px;
+        background-color: $bg-light;
+        font-size: 42px;
+        line-height: 90%;
+        @extend %gabriola-400;
+    }
 }
 
 
