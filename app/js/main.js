@@ -1,4 +1,10 @@
 $(function () {
+
+    $('.program__tab-title').on('click', function(){
+        $(this).next('.program__tab-wrapper').slideToggle();
+        $(this).toggleClass('program__tab-title--active');
+        $('.program__title-arrow').toggleClass('program__title-arrow--active');
+    });
     
     $('.program__tab-link').on('click', function(e){
         e.preventDefault();

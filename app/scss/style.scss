@@ -551,15 +551,116 @@
             display: block;
         }
     }
-
-    &__tab-title {
+    &__tab-inner {
         border: 1px solid $accent;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+    &__tab-title {
         border-radius: 20px;
         padding: 40px 30px;
         background-color: $bg-light;
         font-size: 42px;
         line-height: 90%;
         @extend %gabriola-400;
+        cursor: pointer;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            top: 50%;
+            right: 34px;
+            transform: translateY(-50%);
+            border: 1px solid $accent;
+            background-color: transparent;
+            border-radius: 50%;
+            transition: all .4s;
+        }
+        &:hover::before {
+            background-color: $accent;
+        }
+        &:hover>.program__title-arrow {
+            transform: rotate(90deg);
+            top: 54px;
+            transition: all .4s;
+            path {
+                fill: $bg-light;
+            }
+        }
+        &.program__tab-title--active::before {
+            background-color: $accent;
+        }
+        &.program__tab-title--active {
+            .program__title-arrow--active {
+                path {
+                    fill: $bg-light;
+                }
+            }
+        }
+    }
+    &__title-arrow {
+        position: absolute;
+        top: 50%;
+        right: 45px;
+        transform: translateY(-50%);
+        transition: all .4s;
+    }
+    &__title-arrow--active {
+        transform: rotate(90deg);
+        top: 54px;
+    }
+    &__tab-wrapper {
+        display: none;
+        padding: 40px 30px;
+        padding-top: 0;
+    }
+    &__tab-title--active + .program__tab-wrapper {
+        display: flex !important;
+        gap: 80px;
+    }
+    &__theory-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 510px;
+    }
+    &__tab-subtitle {
+        color: $second-accent;
+        line-height: 1.6;
+        text-transform: uppercase;
+    }
+    &__practice-list {
+        max-width: 230px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__theory-item {
+        padding-left: 32px;
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::before {
+            left: 7px;
+            width: 10px;
+            height: 10px;
+            background-image: url('../images/icons/cake-hat-small.svg');
+            background-repeat: no-repeat;
+        }
+        &::after {
+            left: 0;
+            width: 24px;
+            height: 24px;
+            border: 1px solid $second-accent;
+            border-radius: 50%;
+        }
     }
 }
 
