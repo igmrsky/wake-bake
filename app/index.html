@@ -11,31 +11,37 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-top">
                 <a class="header-top__logo" href="#">
                     <img class="header-top__img" src="images/logo.svg" alt="logo">
                 </a>
                 <nav class="header-top__nav">
+                    <button class="menu__list">
+                        <span class="btn__line"></span>
+                        <span class="btn__line"></span>
+                        <span class="btn__line"></span>
+                        <span class="btn__line"></span>
+                    </button>
                     <ul class="header-top__list">
                         <li class="header-top__list-item">
-                            <a class="header-top__list-link" href="#">
+                            <a class="header-top__list-link" href="#program">
                                 Программа обучения
                             </a>
                         </li>
                         <li class="header-top__list-item">
-                            <a class="header-top__list-link" href="#">
+                            <a class="header-top__list-link" href="#galery">
                                 Галерея
                             </a>
                         </li>
                         <li class="header-top__list-item">
-                            <a class="header-top__list-link" href="#">
+                            <a class="header-top__list-link" href="#feedback">
                                 Отзывы
                             </a>
                         </li>
                         <li class="header-top__list-item">
-                            <a class="header-top__list-link" href="#">
+                            <a class="header-top__list-link" href="#contacts">
                                 Контакты
                             </a>
                         </li>
@@ -59,7 +65,7 @@
                     </a>
                 </div>
                 <div class="header-content__img-box">
-                    <img src="images/hero-cake.png" alt="">
+                    <img class="header-content__girl" src="images/hero-cake.png" alt="">
                     <div class="header-content__controls">
                         <a data-fancybox class="header-content__controls-play"
                             href="https://www.youtube.com/watch?v=kfsKda_lNWs&ab_channel=quviss">
@@ -72,7 +78,7 @@
         </div>
     </header>
 
-    <main class="main">
+    <!-- <main class="main">
         <section class="school">
             <div class="container">
                 <div class="school__inner">
@@ -154,7 +160,7 @@
                 </div>
             </div>
         </section>
-        <section class="program">
+        <section class="program" id="program">
             <div class="container">
                 <h2 class="title program__title">
                     Программа обучения
@@ -554,7 +560,7 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="galery">
             <div class="container">
                 <div class="gallery__top">
                     <div class="gallery__top-img">
@@ -597,7 +603,7 @@
                 </div>
             </div>
         </section>
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <div class="container">
                 <div class="feedback__text-inner">
                     <h2 class="title feedback__title">
@@ -748,7 +754,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
                 <div class="contacts__inner">
                     <div class="contacts__img-box">
@@ -793,7 +799,7 @@
             <div class="footer__inner">
                 <div class="footer__socials">
                     <div class="footer__socials-wrapper">
-                        <a href="#">
+                        <a class="footer__logo-link" href="#header">
                             <img class="footer__logo" src="images/logo-footer.svg" alt="Logo">
                         </a>
                         <span class="footer__name">Школа кондитерского искусства</span>
@@ -834,17 +840,17 @@
                     <nav class="footer__nav">
                         <ul class="footer__nav-list">
                             <li class="footer__nav-item">
-                                <a class="footer__nav-link" href="#">
+                                <a class="footer__nav-link" href="#program">
                                     Программа обучения
                                 </a>
                             </li>
                             <li class="footer__nav-item">
-                                <a class="footer__nav-link" href="#">
+                                <a class="footer__nav-link" href="#galery">
                                     Галерея
                                 </a>
                             </li>
                             <li class="footer__nav-item">
-                                <a class="footer__nav-link" href="#">
+                                <a class="footer__nav-link" href="#feedback">
                                     Отзывы
                                 </a>
                             </li>
@@ -873,7 +879,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="https://unpkg.com/imask"></script>
     <script src="js/mask.js"></script>

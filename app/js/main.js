@@ -1,5 +1,17 @@
 $(function () {
 
+    $('.menu__list').on('click', function(){
+        $('.header-top__nav').toggleClass('header-top__nav--active');
+    });
+
+    $('.header-top__list-link, .footer__logo-link, .footer__nav-link').on("click", function (event) {
+		event.preventDefault();
+
+		const id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1000);
+	});
+
     $('.feedback__items').slick({
         slidesToShow: 3,
         initialSlide: 1,
