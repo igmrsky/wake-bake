@@ -11,31 +11,37 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-top">
-                <a class="header-top__logo" href="#">
+                <a class="header-top__logo" href="/">
                     <img class="header-top__img" src="images/logo.svg" alt="logo">
                 </a>
                 <nav class="header-top__nav">
+                    <button class="menu__list">
+                        <span class="btn__line"></span>
+                        <span class="btn__line"></span>
+                        <span class="btn__line"></span>
+                        <span class="btn__line"></span>
+                    </button>
                     <ul class="header-top__list">
                         <li class="header-top__list-item">
-                            <a class="header-top__list-link" href="#">
+                            <a class="header-top__list-link" href="#program">
                                 Программа обучения
                             </a>
                         </li>
                         <li class="header-top__list-item">
-                            <a class="header-top__list-link" href="#">
+                            <a class="header-top__list-link" href="#galery">
                                 Галерея
                             </a>
                         </li>
                         <li class="header-top__list-item">
-                            <a class="header-top__list-link" href="#">
+                            <a class="header-top__list-link" href="#feedback">
                                 Отзывы
                             </a>
                         </li>
                         <li class="header-top__list-item">
-                            <a class="header-top__list-link" href="#">
+                            <a class="header-top__list-link" href="#contacts">
                                 Контакты
                             </a>
                         </li>
@@ -48,7 +54,7 @@
                         <span class="header-content__start">Старт</span>
                         <span class="header-content__date">26.06.2023</span>
                     </div>
-                    <h1 class="header-content__title">
+                    <h1 class="title header-content__title">
                         Научись печь торты и десерты с нуля
                     </h1>
                     <p class="header-content__text">
@@ -59,7 +65,7 @@
                     </a>
                 </div>
                 <div class="header-content__img-box">
-                    <img src="images/hero-cake.png" alt="">
+                    <img class="header-content__girl" src="images/hero-cake.png" alt="">
                     <div class="header-content__controls">
                         <a data-fancybox class="header-content__controls-play"
                             href="https://www.youtube.com/watch?v=kfsKda_lNWs&ab_channel=quviss">
@@ -77,12 +83,717 @@
             <div class="container">
                 <div class="school__inner">
                     <div class="school__img-box">
-                        <img src="images/school.jpg" alt="our mentor">
+                        <img class="school__img" src="images/school.jpg" alt="our mentor">
                         <div class="school__icon-box">
-                            <a data-fancybox="gallery" href="#pop-up">
-                                <img id="pop-up" src="images/icons/gift.svg" alt="">
-                            </a>
+                            <div class="school__icon-wrapper">
+                                <a class="school__icon-link" data-fancybox="gallery" href="#pop-up">
+                                    <img class="school__icon" src="images/icons/gift.svg" alt="">
+                                </a>
+                            </div>
+                            <div id="pop-up">
+                                <img class="pop-up__img" src="images/pop-up-img.png" alt="">
+                                <div class="pop-up__inner">
+                                    <h2 class="pop-up__title">
+                                        Удиви своих близких вкусными капкейками
+                                    </h2>
+                                    <p class="pop-up__text">
+                                        Оставь свой e-mail, и мы вышлем рецепт на почту
+                                    </p>
+                                    <form class="pop-up__form" action="#">
+                                        <input class="pop-up__input" type="email" placeholder="E-mail">
+                                        <button class="pop-up__btn" type="submit">
+                                            Получить подарок
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <span class="school__icon-text">
+                                Нажми на подарок, чтобы получить наш фирменный рецепт
+                            </span>
                         </div>
+                    </div>
+                    <div class="school__content">
+                        <h2 class="title school__title">
+                            Наша школа —
+                        </h2>
+                        <span class="school__subtitle">
+                            это уютный дом для начинающих кондитеров
+                        </span>
+                        <p class="school__content-text">
+                            С нами ты погрузишься в удивительный мир кондитерского искусства, получишь новые знания и
+                            профессиональные навыки! Обретёшь веру в свои силы, научишься приготовлению разнообразных
+                            современных и классических десертов
+                        </p>
+                        <div class="school__content-items">
+                            <div class="school__content-item">
+                                <div class="school__icon-inner">
+                                    <img class="school__content-icon" src="images/icons/cook-hat.svg" alt="">
+                                </div>
+                                <span class="school__item-text">
+                                    Живое общение с наставниками и одногруппниками
+                                </span>
+                            </div>
+                            <div class="school__content-item">
+                                <div class="school__icon-inner">
+                                    <img class="school__content-icon" src="images/icons/cook-hat.svg" alt="">
+                                </div>
+                                <span class="school__item-text">
+                                    Предоставление всех необходимых материалов
+                                </span>
+                            </div>
+                            <div class="school__content-item">
+                                <div class="school__icon-inner">
+                                    <img class="school__content-icon" src="images/icons/cook-hat.svg" alt="">
+                                </div>
+                                <span class="school__item-text">
+                                    Небольшие группы до 6 человек
+                                </span>
+                            </div>
+                            <div class="school__content-item">
+                                <div class="school__icon-inner">
+                                    <img class="school__content-icon" src="images/icons/cook-hat.svg" alt="">
+                                </div>
+                                <span class="school__item-text">
+                                    Большие аудитории для обучения
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="program" id="program">
+            <div class="container">
+                <h2 class="title program__title">
+                    Программа обучения
+                </h2>
+                <div class="program__top-inner">
+                    <p class="program__top-text">
+                        Продолжительность курса — 4 недели Программа обучения состоит из 8 модулей На каждое занятие
+                        отводится по 6 часов
+                    </p>
+                    <div class="program__top-tabs">
+                        <a class="program__tab-link program__tab-link--active" href="#tab1">
+                            Неделя 1
+                        </a>
+                        <a class="program__tab-link" href="#tab2">
+                            Неделя 2
+                        </a>
+                        <a class="program__tab-link" href="#tab3">
+                            Неделя 3
+                        </a>
+                        <a class="program__tab-link" href="#tab4">
+                            Неделя 4
+                        </a>
+                    </div>
+                </div>
+                <div class="program__tab-content">
+
+                    <div class="program__tab-item program__tab-item--active" id="tab1">
+                        <div class="program__tab-inner">
+                            <h2 class="program__tab-title">
+                                Начало кондитерского пути и создание первого торта
+                                <svg class="program__title-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                        fill="#FFA55C" />
+                                    <path
+                                        d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                        fill="#FFA55C" />
+                                </svg>
+                            </h2>
+                            <div class="program__tab-wrapper">
+                                <ul class="program__theory-list">
+                                    <span class="program__tab-subtitle">
+                                        Теория:
+                                    </span>
+                                    <li class="program__theory-item">
+                                        Организация рабочего места
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Подготовка необходимого инвентаря
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Выбор необходимых продуктов
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Советы по закупке необходимых продуктов и инвентаря
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Обзор хранения и заготовки сырья
+                                    </li>
+                                </ul>
+                                <ul class="program__practice-list">
+                                    <span class="program__tab-subtitle">
+                                        Практика:
+                                    </span>
+                                    <li class="program__practice-item">
+                                        Испечёшь морковный торт с солёной карамелью
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="program__tab-inner">
+                            <h2 class="program__tab-title">
+                                Медовик и капкейки
+                                <svg class="program__title-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                        fill="#FFA55C" />
+                                    <path
+                                        d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                        fill="#FFA55C" />
+                                </svg>
+                            </h2>
+                            <div class="program__tab-wrapper">
+                                <ul class="program__theory-list">
+                                    <span class="program__tab-subtitle">
+                                        Теория:
+                                    </span>
+                                    <li class="program__theory-item">
+                                        Приготовление и украшение капкейков
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Изготовление крема и конфи
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Приготовление медовых коржей для торта
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Пропитка коржей и сборка торта
+                                    </li>
+                                </ul>
+                                <ul class="program__practice-list">
+                                    <span class="program__tab-subtitle">
+                                        Практика:
+                                    </span>
+                                    <li class="program__practice-item">
+                                        Испечёшь капкейки, приготовишь крем и конфи, а также сделаешь своё первое
+                                        пирожное — медовик
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program__tab-item" id="tab2">
+                        <div class="program__tab-inner">
+                            <h2 class="program__tab-title">
+                                Песочное тесто и чизкейк
+                                <svg class="program__title-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                        fill="#FFA55C" />
+                                    <path
+                                        d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                        fill="#FFA55C" />
+                                </svg>
+                            </h2>
+                            <div class="program__tab-wrapper">
+                                <ul class="program__theory-list">
+                                    <span class="program__tab-subtitle">
+                                        Теория:
+                                    </span>
+                                    <li class="program__theory-item">
+                                        Приготовление песочного теста
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Тонкости в приготовлении меренги
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Изготовление заварного крема
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Выпечка тарталеток
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Приготовление нежного чизкейка
+                                    </li>
+                                </ul>
+                                <ul class="program__practice-list">
+                                    <span class="program__tab-subtitle">
+                                        Практика:
+                                    </span>
+                                    <li class="program__practice-item">
+                                        Приготовишь меренги, сделаешь заварной крем для тарталеток и испечёшь свой
+                                        первый чизкейк
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="program__tab-inner">
+                            <h2 class="program__tab-title">
+                                Бисквиты
+                                <svg class="program__title-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                        fill="#FFA55C" />
+                                    <path
+                                        d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                        fill="#FFA55C" />
+                                </svg>
+                            </h2>
+                            <div class="program__tab-wrapper">
+                                <ul class="program__theory-list">
+                                    <span class="program__tab-subtitle">
+                                        Теория:
+                                    </span>
+                                    <li class="program__theory-item">
+                                        Тонкости выпечки бисквитов
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Приготовление ванильного бисквита
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Приготовление фисташкового бисквита
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Приготовление шоколадного бисквита
+                                    </li>
+                                </ul>
+                                <ul class="program__practice-list">
+                                    <span class="program__tab-subtitle">
+                                        Практика:
+                                    </span>
+                                    <li class="program__practice-item">
+                                        Отработаешь выпечку трёх бисквитов для будущих тортов
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program__tab-item" id="tab3">
+                        <div class="program__tab-inner">
+                            <h2 class="program__tab-title">
+                                Дрожжевое тесто
+                                <svg class="program__title-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                        fill="#FFA55C" />
+                                    <path
+                                        d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                        fill="#FFA55C" />
+                                </svg>
+                            </h2>
+                            <div class="program__tab-wrapper">
+                                <ul class="program__theory-list">
+                                    <span class="program__tab-subtitle">
+                                        Теория:
+                                    </span>
+                                    <li class="program__theory-item">
+                                        Технология приготовления дрожжевого теста: тонкости и советы
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Приготовление песочного теста
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Рецептурные нюансы
+                                    </li>
+                                </ul>
+                                <ul class="program__practice-list">
+                                    <span class="program__tab-subtitle">
+                                        Практика:
+                                    </span>
+                                    <li class="program__practice-item">
+                                        Приготовишь заготовку для торта
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="program__tab-inner">
+                            <h2 class="program__tab-title">
+                                Работа с кремами
+                                <svg class="program__title-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                        fill="#FFA55C" />
+                                    <path
+                                        d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                        fill="#FFA55C" />
+                                </svg>
+                            </h2>
+                            <div class="program__tab-wrapper">
+                                <ul class="program__theory-list">
+                                    <span class="program__tab-subtitle">
+                                        Теория:
+                                    </span>
+                                    <li class="program__theory-item">
+                                        Приготовление кремов: ганаши, кремю
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Приготовление кремов: ганаши, кремю
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Приготовление профитролей и нескольких видов кремов
+                                    </li>
+                                </ul>
+                                <ul class="program__practice-list">
+                                    <span class="program__tab-subtitle">
+                                        Практика:
+                                    </span>
+                                    <li class="program__practice-item">
+                                        Приготовишь профитроли и несколько видов кремов
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program__tab-item" id="tab4">
+                        <div class="program__tab-inner">
+                            <h2 class="program__tab-title">
+                                Mille-feuille, или Наполеон
+                                <svg class="program__title-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                        fill="#FFA55C" />
+                                    <path
+                                        d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                        fill="#FFA55C" />
+                                </svg>
+                            </h2>
+                            <div class="program__tab-wrapper">
+                                <ul class="program__theory-list">
+                                    <span class="program__tab-subtitle">
+                                        Теория:
+                                    </span>
+                                    <li class="program__theory-item">
+                                        Приготовление слоёного теста
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Рецептура и создание крема дипломат
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Выбор необходимых продуктов
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Приготовление французского морковного десерта
+                                    </li>
+                                </ul>
+                                <ul class="program__practice-list">
+                                    <span class="program__tab-subtitle">
+                                        Практика:
+                                    </span>
+                                    <li class="program__practice-item">
+                                        Испечёте торт «Наполеон» и приготовите необычный морковный десерт
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="program__tab-inner">
+                            <h2 class="program__tab-title">
+                                Завершение курса
+                                <svg class="program__title-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                        fill="#FFA55C" />
+                                    <path
+                                        d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                        fill="#FFA55C" />
+                                </svg>
+                            </h2>
+                            <div class="program__tab-wrapper">
+                                <ul class="program__theory-list">
+                                    <span class="program__tab-subtitle">
+                                        Теория:
+                                    </span>
+                                    <li class="program__theory-item">
+                                        Работа кондитера на заказ
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Применение знаний о технологии выпечки к другим рецептам
+                                    </li>
+                                    <li class="program__theory-item">
+                                        Разработка собственных рецептов
+                                    </li>
+                                </ul>
+                                <ul class="program__practice-list">
+                                    <span class="program__tab-subtitle">
+                                        Практика:
+                                    </span>
+                                    <li class="program__practice-item">
+                                        Самостоятельно, без наставника испечёте торт на ваш выбор
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="program__sale">
+                    <div class="program__sale-content">
+                        <div class="program__sale-box">
+                            Успей получить скидку
+                            <div class="program__sale-value">
+                                -30%
+                            </div>
+                            <span>
+                                До 1 июля
+                            </span>
+                        </div>
+                        <div class="program__price program__price--small">
+                            <div class="program__price-text">
+                                Стоимость курса без скидки
+                            </div>
+                            <div class="program__price-value">
+                                32 000 руб.
+                            </div>
+                        </div>
+                        <div class="program__price program__price--big">
+                            <div class="program__price-text">
+                                Стоимость курса со скидкой
+                            </div>
+                            <div class="program__price-sale">
+                                22 400 руб.
+                            </div>
+                        </div>
+                        <a class="program__sale-btn" href="#">
+                            Оставить заявку
+                        </a>
+                    </div>
+                    <div class="program__img-inner">
+                        <img class="program__img" src="images/sale-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="galery">
+            <div class="container">
+                <div class="gallery__top">
+                    <div class="gallery__top-img">
+                        <img class="gallery__img" src="images/gallery-cupcakes.png" alt="">
+                    </div>
+                    <div class="gallery__content">
+                        <h2 class="title gallery__title">
+                            Фотогалерея
+                        </h2>
+                        <p class="gallery__text">
+                            Для комфортного обучения сделаны просторные аудитории, где предоставляется всё необходимое
+                            оборудование. Здесь наши ученики создают кулинарные шедевры под присмотром опытных
+                            наставников
+                        </p>
+                    </div>
+                    <div class="counter"></div>
+                </div>
+                <div class="gallery__slider">
+                    <div class="gallery__item">
+                        <img class="gallery__item-img" src="images/gallery/1.jpg" alt="">
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__item-img" src="images/gallery/2.jpg" alt="">
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__item-img" src="images/gallery/3.jpg" alt="">
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__item-img" src="images/gallery/4.jpg" alt="">
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__item-img" src="images/gallery/3.jpg" alt="">
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__item-img" src="images/gallery/2.jpg" alt="">
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__item-img" src="images/gallery/1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback" id="feedback">
+            <div class="container">
+                <div class="feedback__text-inner">
+                    <h2 class="title feedback__title">
+                        Обратная связь от наших учеников
+                    </h2>
+                    <p class="feedback__text">
+                        Все наши ученики абсолютно разные, и мы к каждому из них находим индивидуальный подход. Именно
+                        поэтому все остаются довольны не только кулинарными результатами, но и атмосферой обучения в
+                        целом
+                    </p>
+                </div>
+            </div>
+            <div class="feedback__items">
+                <div class="feedback__item">
+                    <div class="feedback__img-box">
+                        <img class="feedback__avatar" src="images/slider/1.jpg" alt="">
+                        <span class="feedback__name">АЛЕКСАНДРА</span>
+                        <div class="feedback__icon-box">
+                            <img class="feedback__icon" src="images/icons/instagram.svg" alt="">
+                            <span class="feedback__instaname">
+                                akimovaa
+                            </span>
+                        </div>
+                    </div>
+                    <div class="feedback__content">
+                        <h3 class="feedback__item-title">
+                            Спасибо за курс!
+                        </h3>
+                        <p class="feedback__content-text">
+                            Действительно понятный и доступный курс для начинающего кондитера. Для того самого, который
+                            ничего-ничего не знал, не умел. А спустя месяц уже знает, как сделать так, чтобы было
+                            вкусно, красиво и профессионально. А если что-то и непонятно, то всегда можно спросить и
+                            уточнить.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__img-box">
+                        <img class="feedback__avatar" src="images/slider/2.jpg" alt="">
+                        <span class="feedback__name">Елизавета</span>
+                        <div class="feedback__icon-box">
+                            <img class="feedback__icon" src="images/icons/instagram.svg" alt="">
+                            <span class="feedback__instaname">
+                                lizzy_av
+                            </span>
+                        </div>
+                    </div>
+                    <div class="feedback__content">
+                        <h3 class="feedback__item-title">
+                            Для меня действительно сбылась мечта!
+                        </h3>
+                        <p class="feedback__content-text">
+                            Это были одни из лучших месяцев моей жизни. Для меня действительно сбылась мечта, к которой
+                            я шла уже давно, но не хватало опыта и знаний. Это все дала мне ваша школа. В рецептурах все
+                            довольно понятно разъясняется, если есть вопросы, их всегда можно задать, что не мало важно.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__img-box">
+                        <img class="feedback__avatar" src="images/slider/3.jpg" alt="">
+                        <span class="feedback__name">Игорь</span>
+                        <div class="feedback__icon-box">
+                            <img class="feedback__icon" src="images/icons/instagram.svg" alt="">
+                            <span class="feedback__instaname">
+                                igor_sverlovskii
+                            </span>
+                        </div>
+                    </div>
+                    <div class="feedback__content">
+                        <h3 class="feedback__item-title">
+                            Здесь я узнал много чего нового!
+                        </h3>
+                        <p class="feedback__content-text">
+                            Спасибо большое Wake &amp Bake за такой курс! Здесь я узнал много чего нового для меня! Курс
+                            очень хороший, захватывает самые актуальные темы для кондитера! Мне понравилось что всегда
+                            была поддержка не только со стороны куратора но и таких же учеников-кондитеров как и я. Мне
+                            прям аж будет не хватать всего этого.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__img-box">
+                        <img class="feedback__avatar" src="images/slider/2.jpg" alt="">
+                        <span class="feedback__name">Елизавета</span>
+                        <div class="feedback__icon-box">
+                            <img class="feedback__icon" src="images/icons/instagram.svg" alt="">
+                            <span class="feedback__instaname">
+                                lizzy_av
+                            </span>
+                        </div>
+                    </div>
+                    <div class="feedback__content">
+                        <h3 class="feedback__item-title">
+                            Для меня действительно сбылась мечта!
+                        </h3>
+                        <p class="feedback__content-text">
+                            Это были одни из лучших месяцев моей жизни. Для меня действительно сбылась мечта, к которой
+                            я шла уже давно, но не хватало опыта и знаний. Это все дала мне ваша школа. В рецептурах все
+                            довольно понятно разъясняется, если есть вопросы, их всегда можно задать, что не мало важно.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__img-box">
+                        <img class="feedback__avatar" src="images/slider/1.jpg" alt="">
+                        <span class="feedback__name">АЛЕКСАНДРА</span>
+                        <div class="feedback__icon-box">
+                            <img class="feedback__icon" src="images/icons/instagram.svg" alt="">
+                            <span class="feedback__instaname">
+                                akimovaa
+                            </span>
+                        </div>
+                    </div>
+                    <div class="feedback__content">
+                        <h3 class="feedback__item-title">
+                            Спасибо за курс!
+                        </h3>
+                        <p class="feedback__content-text">
+                            Действительно понятный и доступный курс для начинающего кондитера. Для того самого, который
+                            ничего-ничего не знал, не умел. А спустя месяц уже знает, как сделать так, чтобы было
+                            вкусно, красиво и профессионально. А если что-то и непонятно, то всегда можно спросить и
+                            уточнить.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__img-box">
+                        <img class="feedback__avatar" src="images/slider/2.jpg" alt="">
+                        <span class="feedback__name">Елизавета</span>
+                        <div class="feedback__icon-box">
+                            <img class="feedback__icon" src="images/icons/instagram.svg" alt="">
+                            <span class="feedback__instaname">
+                                lizzy_av
+                            </span>
+                        </div>
+                    </div>
+                    <div class="feedback__content">
+                        <h3 class="feedback__item-title">
+                            Для меня действительно сбылась мечта!
+                        </h3>
+                        <p class="feedback__content-text">
+                            Это были одни из лучших месяцев моей жизни. Для меня действительно сбылась мечта, к которой
+                            я шла уже давно, но не хватало опыта и знаний. Это все дала мне ваша школа. В рецептурах все
+                            довольно понятно разъясняется, если есть вопросы, их всегда можно задать, что не мало важно.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__img-box">
+                        <img src="images/contacts-cake.png" alt="">
+                    </div>
+                    <div class="contacts__form-inner">
+                        <h2 class="title contacts__title">
+                            Оставить заявку на обучение
+                        </h2>
+                        <p class="contacts__form-text">
+                            Заполни контактные данные, и наш менеджер свяжется с тобой в ближайшее время
+                        </p>
+                        <form class="contacts__form" action="#">
+                            <input class="contacts__input contacts__input-name" type="text" placeholder="Имя">
+                            <input class="contacts__input contacts__input-phone" 
+                                id="phone" 
+                                type="tel"
+                                name="phone"
+                                placeholder="Телефон">
+                            <label class="contacts__label">
+                                <p class="contacts__politics">
+                                    Нажимая на кнопку, вы соглашаетесь с
+                                    <a class="contacts__politics-link" href="#">
+                                        политикой конфиденциальности
+                                    </a>
+                                </p>
+                                <input class="contacts__checkbox" type="checkbox">
+                                <span class="contacts__checkbox-span"></span>
+                            </label>
+                            <button class="contacts__btn" type="submit">
+                                Записаться на курс
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -94,7 +805,7 @@
             <div class="footer__inner">
                 <div class="footer__socials">
                     <div class="footer__socials-wrapper">
-                        <a href="#">
+                        <a class="footer__logo-link" href="#header">
                             <img class="footer__logo" src="images/logo-footer.svg" alt="Logo">
                         </a>
                         <span class="footer__name">Школа кондитерского искусства</span>
@@ -135,17 +846,17 @@
                     <nav class="footer__nav">
                         <ul class="footer__nav-list">
                             <li class="footer__nav-item">
-                                <a class="footer__nav-link" href="#">
+                                <a class="footer__nav-link" href="#program">
                                     Программа обучения
                                 </a>
                             </li>
                             <li class="footer__nav-item">
-                                <a class="footer__nav-link" href="#">
+                                <a class="footer__nav-link" href="#galery">
                                     Галерея
                                 </a>
                             </li>
                             <li class="footer__nav-item">
-                                <a class="footer__nav-link" href="#">
+                                <a class="footer__nav-link" href="#feedback">
                                     Отзывы
                                 </a>
                             </li>
@@ -176,6 +887,8 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/mask.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 
